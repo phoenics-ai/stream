@@ -11,6 +11,7 @@ from stream.parser.onnx.conv import ConvParser
 from stream.parser.onnx.fusion_edge import FusionEdgeParser
 from stream.parser.onnx.gemm import GemmParser
 from stream.parser.onnx.global_average_pool import GlobalAveragePoolParser
+from stream.parser.onnx.matmul_integer import MatMulIntegerParser
 from stream.parser.onnx.max_pool import MaxPoolParser
 from stream.parser.onnx.mul import MulParser
 from stream.parser.onnx.operator_parser import OnnxOperatorParser
@@ -35,6 +36,7 @@ class ONNXModelParser:
         "Conv": ConvParser,
         # "MatMul": MatMulParser,
         "Gemm": GemmParser,
+        "MatMulInteger": MatMulIntegerParser,
         # "Einsum": EinsumParser,
         "MaxPool": MaxPoolParser,
         # "AveragePool": PoolingParser,
